@@ -1,0 +1,60 @@
+$white: #ffffff;
+$half-white: rgba(255, 255, 255, .8);
+$dim-white: #efefef;
+
+$light: #ecf0f1;
+$half-light: rgba(236, 240, 241, .75);
+$dim-light: #bdc3c7;
+
+$grey: #95a5a6;
+$dim-grey: #7f8c8d;
+
+$green: #2ecc71;
+$half-green: rgba(46, 204, 113, .5);
+$dim-green: #27ae60;
+
+$blue: rgba(52, 152, 219, 1.0);
+$dim-blue: rgba(41, 128, 185, 1.0);
+
+$orange: rgba(230, 126, 34, 1.0);
+$half-orange: rgba(230, 126, 34, .5);
+$dim-orange: rgba(211, 84, 0, 1.0);
+
+$yellow: rgba(241, 196, 15, 1.0);
+$half-yellow: rgba(241, 196, 15, .5);
+$quarter-yellow: rgba(241, 196, 15, .25);
+
+$violet: rgba(155, 89, 182, 1.0);
+$half-violet: rgba(155, 89, 182, .5);
+$quarter-violet: rgba(155, 89, 182, .25);
+$dim-violet: rgba(142, 68, 173, 1.0);
+
+$dark: rgba(52, 73, 94, 1.0);
+$half-dark: rgba(52, 73, 94, .5);
+$darker: rgba(44, 62, 80, 1.0);
+
+$background: $darker;
+$color: $light;
+
+$nav-bar-default-background: $half-light;
+$nav-bar-default-color: $dark;
+$nav-bar-logo-background: $dark;
+$nav-bar-logo-hover-background: $half-dark;
+
+$wrapper-background: $darker;
+$sidebar-background: $darker;
+$sidebar-separator: $half-yellow;
+$sidebar-lighter-separator: none;
+
+$menu-header-color: $light;
+$menu-header-hover-color: $dim-light;
+$menu-color: $light;
+$menu-hover-color: $white;
+$menu-hover-background: $yellow;
+$menu-active-border-color: $yellow;
+
+$logo-first: $yellow;
+$logo-second: $white;
+
+$page-content-background: $white;
+$page-content-color: $darker;
