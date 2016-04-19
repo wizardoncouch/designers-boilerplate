@@ -15,7 +15,7 @@ html {
 body {
   background: $background;
   margin-top: 100px;
-  font-family: "Montserrat-Light";
+  font-family: "Oxygen";
   color: $color;
 }
 
@@ -119,7 +119,7 @@ footer {
 
   #sidebar-wrapper {
     background: $sidebar-background;
-    font-family: "Montserrat";
+    font-family: "Oxygen";
     width: 250px;
     left: -180px;
     position: absolute;
@@ -217,28 +217,37 @@ footer {
       position: relative;
       line-height: 40px;
       text-indent: 0;
-      color: $menu-active-border-color;
-      &.current > a:before {
-        content: "";
-        border-left: 10px solid $sidebar-background;
-        border-top: 20px solid transparent;
-        border-bottom: 20px solid transparent;
-        margin-top: 0px;
-        position: absolute;
-        right: -10px;
-        width: 0;
-        height: 0;
-      }
-      &.current > a:hover:before {
-        content: "";
-        border-left: 10px solid $menu-hover-background;
-        border-top: 20px solid transparent;
-        border-bottom: 20px solid transparent;
-        margin-top: 0px;
-        position: absolute;
-        right: -10px;
-        width: 0;
-        height: 0;
+      &.current {
+        background-color: $menu-current-background;
+
+        & > a {
+          color: $menu-current-color;
+          &:before {
+            content: "";
+            border-left: 10px solid $menu-current-background;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+            margin-top: 0px;
+            position: absolute;
+            right: -10px;
+            width: 0;
+            height: 0;
+          }
+          &:hover {
+            background-color: $menu-current-background;
+            &:before {
+              content: "";
+              border-left: 10px solid $menu-current-background;
+              border-top: 20px solid transparent;
+              border-bottom: 20px solid transparent;
+              margin-top: 0px;
+              position: absolute;
+              right: -10px;
+              width: 0;
+              height: 0;
+            }
+          }
+        }
       }
       & > a {
         color: $menu-color;
@@ -274,7 +283,7 @@ footer {
 /* Top Navigation */
 
 .top-nav {
-  font-family: "Montserrat";
+  font-family: "Oxygen";
   margin: 0 -15px;
   padding: 0 15px;
   & > li {
@@ -304,8 +313,8 @@ footer {
   & > .open > a,
   & > .open > a:hover,
   & > .open > a:focus {
-    color: #34495e;
-    background: #ecf0f1;
+    color: $yellow;
+    background: $light;
   }
   & > .open > .dropdown-menu {
     float: left;
@@ -313,22 +322,20 @@ footer {
     margin-top: 0;
     border: none;
     @include border-radius(0);
-    background: #ecf0f1;
+    background: $light;
+    box-shadow: none;
     & > li > a {
       white-space: normal;
       color: #34495e;
       &:hover {
-        color: #ecf0f1;
-        background: rgba(52, 73, 94, .5);
+        color: $half-dark;
+        background: $light;
       }
     }
   }
 
   ul.message-dropdown {
     padding: 0;
-    max-height: 250px;
-    overflow-x: hidden;
-    overflow-y: auto;
 
     li.message-preview {
       width: 275px;

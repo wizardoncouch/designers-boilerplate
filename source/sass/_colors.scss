@@ -32,11 +32,13 @@ $dim-violet: rgba(142, 68, 173, 1.0);
 $dark: rgba(52, 73, 94, 1.0);
 $half-dark: rgba(52, 73, 94, .5);
 $darker: rgba(44, 62, 80, 1.0);
+$slightly-darker: rgba(44, 62, 80, .9);
+$half-darker: rgba(44, 62, 80, .5);
 
 $background: $darker;
 $color: $light;
 
-$nav-bar-default-background: $half-light;
+$nav-bar-default-background: $light;
 $nav-bar-default-color: $dark;
 $nav-bar-logo-background: $dark;
 $nav-bar-logo-hover-background: $half-dark;
@@ -49,9 +51,11 @@ $sidebar-lighter-separator: none;
 $menu-header-color: $light;
 $menu-header-hover-color: $dim-light;
 $menu-color: $light;
-$menu-hover-color: $white;
-$menu-hover-background: $yellow;
-$menu-active-border-color: $yellow;
+$menu-current-background: $dark;
+$menu-current-color: $half-yellow;
+$menu-hover-color: $quarter-yellow;
+$menu-hover-background: $sidebar-background;
+$menu-border-color: $yellow;
 
 $logo-first: $yellow;
 $logo-second: $white;
