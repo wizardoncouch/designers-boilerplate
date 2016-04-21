@@ -15,7 +15,8 @@ var source = './source',
         'jquery': './bower_components/jquery/',
         'jqueryUI': './bower_components/jquery-ui/',
         'bootstrap': './bower_components/bootstrap-sass/assets/',
-        'fontawesome': './bower_components/font-awesome/'
+        'fontawesome': './bower_components/font-awesome/',
+        'pace': './bower_components/PACE/'
     };
 
 gulp.task('serve', ['font-vendors', 'fonts', 'images', 'js', 'scss', 'html'], function () {
@@ -75,8 +76,9 @@ gulp.task('font-vendors', function () {
 gulp.task('js', function () {
     gulp.src([
             paths.jquery + 'dist/jquery.js',
-            paths.jquery + 'jquery-ui.js',
+            paths.jqueryUI + 'jquery-ui.js',
             paths.bootstrap + 'javascripts/bootstrap.js',
+            paths.pace + 'pace.js',
             js + '/*.js'
         ])
         .pipe(concat('app.js'))

@@ -26,9 +26,25 @@
             </a>
         </div>
         <!-- Top Menu Items -->
-        <ul class="nav navbar-right top-nav">
-            <li class="dropdown pull-right">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Alex</span><img id="profile-image" src="/images/profile.jpg"/> </a>
+        <ul class="nav top-nav">
+            <li class="search-container" id="toggleable">
+                <form class="search">
+                    <input type="text" id="search-input" placeholder="Jane Doe">
+                    <button type="submit" id="search-submit">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                    <a href="javascript:void(0);" id="search-close" class="search-toggle-button">
+                        <i class="fa fa-times-circle" aria-hidden="true"></i>
+                    </a>
+                </form>
+                <a href="javascript:void(0);" id="search-toggle" class="search-toggle-button">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="dropdown pull-right toggleable">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Alex</span><img id="profile-image"
+                                                                                                 src="/images/profile.jpg"/>
+                </a>
                 <ul class="dropdown-menu">
                     <li>
                         <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
@@ -45,7 +61,7 @@
                     </li>
                 </ul>
             </li>
-            <li class="dropdown pull-right">
+            <li class="dropdown pull-right toggleable">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i></a>
                 <ul class="dropdown-menu alert-dropdown">
                     <li>
@@ -72,7 +88,7 @@
                     </li>
                 </ul>
             </li>
-            <li class="dropdown pull-right">
+            <li class="dropdown pull-right toggleable">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i></a>
                 <ul class="dropdown-menu message-dropdown">
                     <li class="message-preview">
@@ -128,7 +144,7 @@
         </ul>
     </nav>
     <section class="row">
-        <div id="wrapper">
+        <div id="wrapper" class="active">
             <!-- Sidebar -->
             <aside id="sidebar-wrapper">
                 <ul id="sidebar-menu" class="sidebar-nav">
@@ -146,14 +162,14 @@
                 <ul class="sidebar-nav" id="sidebar">
                     <li>
                         <a href="#">
-                            <span class="sub-icon glyphicon glyphicon-dashboard"></span>
+                            <i class="sub-icon fa fa-dashboard"></i>
                             <span class="triangle"></span>
                             <span>Dashboard</span>
                         </a>
                     </li>
                     <li class="current">
                         <a href="#">
-                            <span class="sub-icon glyphicon glyphicon-user"></span>
+                            <i class="sub-icon fa fa-user"></i>
                             <small class="triangle"></small>
                             <span>Users</span>
                         </a>
@@ -169,40 +185,25 @@
                 <div class="container-fluid" id="page-content">
                     <div class="row">
                         <div class="col-md-12">
-                            The<br/> quick<br/> brown<br/> fox<br/> jumps <br/>over <br/>the <br/>lazy <br/>fucker.<br/>
-                            <br/>
-                            The<br/> quick<br/> brown<br/> fox<br/> jumps <br/>over <br/>the <br/>lazy <br/>fucker.<br/>
-                            <br/>
-                            The<br/> quick<br/> brown<br/> fox<br/> jumps <br/>over <br/>the <br/>lazy <br/>fucker.<br/>
-                            <br/>
-                            The<br/> quick<br/> brown<br/> fox<br/> jumps <br/>over <br/>the <br/>lazy <br/>fucker.<br/>
-                            <br/>
-                            The<br/> quick<br/> brown<br/> fox<br/> jumps <br/>over <br/>the <br/>lazy <br/>fucker.<br/>
-                            <br/>
-                            The<br/> quick<br/> brown<br/> fox<br/> jumps <br/>over <br/>the <br/>lazy <br/>fucker.<br/>
-                            <br/>
-                            The<br/> quick<br/> brown<br/> fox<br/> jumps <br/>over <br/>the <br/>lazy <br/>fucker.<br/>
-                            <br/>
-                            The<br/> quick<br/> brown<br/> fox<br/> jumps <br/>over <br/>the <br/>lazy <br/>fucker.<br/>
-                            <br/>
-                            The<br/> quick<br/> brown<br/> fox<br/> jumps <br/>over <br/>the <br/>lazy <br/>fucker.<br/>
-                            <br/>
-                            The<br/> quick<br/> brown<br/> fox<br/> jumps <br/>over <br/>the <br/>lazy <br/>fucker.<br/>
-                            <br/>
-                            The<br/> quick<br/> brown<br/> fox<br/> jumps <br/>over <br/>the <br/>lazy <br/>fucker.<br/>
-                            <br/>
-                            The<br/> quick<br/> brown<br/> fox<br/> jumps <br/>over <br/>the <br/>lazy <br/>fucker.<br/>
-                            <br/>
-                            The<br/> quick<br/> brown<br/> fox<br/> jumps <br/>over <br/>the <br/>lazy <br/>fucker.<br/>
-                            <br/>
-                            The<br/> quick<br/> brown<br/> fox<br/> jumps <br/>over <br/>the <br/>lazy <br/>fucker.<br/>
-                            <br/>
-                            The<br/> quick<br/> brown<br/> fox<br/> jumps <br/>over <br/>the <br/>lazy <br/>fucker.<br/>
-                            <br/>
-                            The<br/> quick<br/> brown<br/> fox<br/> jumps <br/>over <br/>the <br/>lazy <br/>fucker.<br/>
-                            <br/>
-                            The<br/> quick<br/> brown<br/> fox<br/> jumps <br/>over <br/>the <br/>lazy <br/>fucker.<br/>
-                            <br/>
+                            <h3 class="page-title">
+                                <i class="fa fa-code"></i>
+                                API
+                                <a href="/api/new" class="normal">Back</a>
+                            </h3>
+
+                            <table class="table table-striped">
+                                <thead>
+                                <th>Project</th>
+                                <th>Token</th>
+                                <th>Active</th>
+                                <th></th>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td colspan="7" align="center">No results found!</td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -216,5 +217,11 @@
 </footer>
 
 <script src="./js/app-min.js"></script>
+<script>
+    $(function () {
+        $("#sortable").sortable();
+        $("#sortable").disableSelection();
+    });
+</script>
 </body>
 </html>
